@@ -1,0 +1,45 @@
+---
+const createdDate = new Date(2022, 3, 9)
+const now = new Date()
+let copyrightDate = `${createdDate.getFullYear()}`
+if (createdDate.getFullYear() !== now.getFullYear()) {
+  copyrightDate = `${createdDate.getFullYear()} - ${now.getFullYear()}`
+}
+---
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width">
+	<title>{title}</title>
+
+	<link rel="icon" type="image/png" href="/favicon.png" />
+  <script defer src="/scripts/main.js"></script>
+</head>
+<body>
+  <header class="main-header">
+    <nav class="main-nav">
+      <a href="/" class="brand">
+        <img src="/assets/logo.svg" alt="Brand Logo"> The Beloved's Blog
+      </a>
+
+      <ul class="nav-links">
+        <li class="nav-item"><a href="/home" class="nav-link">Home</a></li>
+        <li class="nav-item"><a href="/about" class="nav-link">About</a></li>
+        <li class="nav-item"><a href="/article" class="nav-link">Article</a></li>
+        <li class="nav-item"><a href="/archive" class="nav-link">Archive</a></li>
+        <li class="nav-item"><a href="/contact" class="nav-link">Contact</a></li>
+      </ul>
+
+      <button class="collapse">
+        <img src="/assets/xmark.svg" alt="Close Menu" class="icon-xmark">
+        <img src="/assets/bars.svg" alt="Expand Menu" class="icon-bars">
+      </button>
+    </nav>
+  </header>
+
+	<main>
+	</main>
+
+  <footer class="main-footer">The Beloved's Blog &copy; Davina Leong {copyrightDate}</footer>
+</body>
+</html>
