@@ -7,8 +7,9 @@ Variables
   - Font Sizes
   - Font Weights
   - Font Styles
-  - Text Alignments
-  - Text Transforms
+  - Text Alignment
+  - Text Transform
+  - Text Decoration
   - Spacers
   - Breakpoints
   - Box Shadows
@@ -127,6 +128,19 @@ $text-transforms: (
   @return $value;
 }
 
+/// Text Decoration
+$text-decorations: ("none": none,
+  "uppercase": uppercase,
+  "lowercase": lowercase,
+  "capitalize": capitalize,
+);
+
+@function text-decoration($key) {
+  $value: map-get($text-decorations, $key);
+  @debug $value;
+  @return $value;
+}
+
 /// Spacers
 $unit: 1rem;
 $spacers: (
@@ -137,6 +151,7 @@ $spacers: (
   "5": $unit * 2,
   "6": $unit * 3,
   "7": $unit * 5,
+  "auto": auto
 );
 
 @function spacer($key) {
