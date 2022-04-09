@@ -5,12 +5,14 @@ import MainFooter from '../components/MainFooter.astro';
 
 // Scripts
 import main from '../scripts/main';
+
+const {title} = Astro.props;
 ---
 <html lang="en">
 <head>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width">
-	<title></title>
+	<title>{title}</title>
 
 	<link rel="icon" type="image/png" href="/favicon.png" />
 </head>
