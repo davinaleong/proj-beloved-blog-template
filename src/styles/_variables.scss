@@ -1,6 +1,11 @@
 /*
-Sections
+Variables
   - Colors
+  - Font Families
+  - Font Sizes
+  - Spacers
+  - Breakpoints
+  - Box Shadows
 */
 
 /// Colors
@@ -15,6 +20,74 @@ $colors: (
 );
 
 @function color($key) {
-  $col: map-get($colors, $key);
-  @return $col;
+  $value: map-get($colors, $key);
+  @return $value;
+}
+
+/// Font Families
+$families: (
+  "heading": "Merriweather, serif",
+  "body": "Nunito, sans-serif",
+);
+
+@function family($key) {
+  $value: map-get($families, $key);
+  @return $value;
+}
+
+/// Font Sizes
+$sizes: (
+  "root": "16px",
+  "base": clamp(1rem, 1rem + 1vw, 3rem),
+  "site-title": clamp(2.25rem, 3rem + 1vw, 10rem),
+  "page-title": clamp(2.25rem, 2rem + 1vw, 7rem),
+  "section-title": clamp(0.875rem, 1rem + 1vw, 2rem),
+  "post-title": clamp(1.5rem, 1rem + 1vw, 5rem),
+  "date": clamp(0.75rem, 1rem + 1vw, 1.75rem),
+);
+
+@function size($key) {
+  $value: map-get($sizes, $key);
+  @return $value;
+}
+
+/// Spacers
+$unit: 1rem;
+$spacers: (
+  "1": $unit * 0.25,
+  "2": $unit * 0.5,
+  "3": $unit * 1,
+  "4": $unit * 1.25,
+  "5": $unit * 2,
+  "6": $unit * 3,
+  "7": $unit * 5,
+);
+
+@function spacer($key) {
+  $value: map-get($spacers, $key);
+  @return $value;
+}
+
+/// Breakpoints
+$breakpoints: (
+  "phone": 300px,
+  "phone-l": 600px,
+  "tablet": 900px,
+  "desktop": 1200px,
+  "desktop-l": 1600px,
+);
+
+@function breakpoint($key) {
+  $value: map-get($breakpoints, $key);
+  @return $value;
+}
+
+/// Box Shadows
+$box-shadows: (
+  "hero": 3px 3px 5px rgba(1, 1, 1, 0.3),
+);
+
+@function box-shadow($key) {
+  $value: map-get($box-shadows, $key);
+  @return $value;
 }
