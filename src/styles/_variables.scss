@@ -3,6 +3,9 @@ Variables
   - Colors
   - Font Families
   - Font Sizes
+  - Font Weights
+  - Font Styles
+  - Text Alignment
   - Spacers
   - Breakpoints
   - Box Shadows
@@ -48,6 +51,47 @@ $sizes: (
 
 @function size($key) {
   $value: map-get($sizes, $key);
+  @return $value;
+}
+
+/// Font Weights
+$weights: (
+  "100": 100,
+  "200": 200,
+  "300": 300,
+  "400": 400,
+  "500": 500,
+  "600": 600,
+  "700": 700,
+  "800": 800,
+  "900": 900,
+);
+
+@function weight($key) {
+  $value: map-get($weights, $key);
+  @return $value;
+}
+
+/// Font Styles
+$styles: (
+  "normal": "normal",
+  "italic": "italic",
+);
+
+@function style($key) {
+  $value: map-get($styles, $key);
+  @return $value;
+}
+
+/// Alignment
+$text-alignments: (
+  "left": "left",
+  "center": "center",
+  "right": "right",
+);
+
+@function text-alignment($key) {
+  $value: map-get($text-alignments, $key);
   @return $value;
 }
 
