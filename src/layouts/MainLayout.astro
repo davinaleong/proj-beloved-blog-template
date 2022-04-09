@@ -1,0 +1,28 @@
+---
+// Component Imports
+import MainHeader from '../components/MainHeader.astro';
+import MainFooter from '../components/MainFooter.astro';
+
+// Scripts
+import main from '../scripts/main';
+---
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width">
+	<title></title>
+
+	<link rel="icon" type="image/png" href="/favicon.png" />
+</head>
+<body>
+  <MainHeader />
+
+	<main class="main-content">
+    <div class="container">
+      <slot></slot>
+    </div>
+	</main>
+
+  <MainFooter />
+</body>
+</html>
