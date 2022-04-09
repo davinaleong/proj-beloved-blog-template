@@ -5,6 +5,10 @@ $value in $colors {
         color: $value;
     }
 
+    a.color-#{$key}:hover, a.color-#{$key}:focus {
+        color: $value;
+    }
+
     .bg-#{$key} {
         background-color: $value;
     }
