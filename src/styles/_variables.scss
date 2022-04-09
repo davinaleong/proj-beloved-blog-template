@@ -7,7 +7,8 @@ Variables
   - Font Sizes
   - Font Weights
   - Font Styles
-  - Text Alignment
+  - Text Alignments
+  - Text Transforms
   - Spacers
   - Breakpoints
   - Box Shadows
@@ -48,7 +49,7 @@ $sizes: (
   "base": clamp(1rem, 1rem + 1vw, 3rem),
   "site-title": clamp(2.25rem, 3rem + 1vw, 10rem),
   "page-title": clamp(2.25rem, 2rem + 1vw, 7rem),
-  "section-title": clamp(0.875rem, 1rem + 1vw, 2rem),
+  "section-title": clamp(0.875rem, 1rem + 1vw, 1rem),
   "post-title": clamp(1.5rem, 1rem + 1vw, 5rem),
   "date": clamp(0.75rem, 1rem + 1vw, 1.75rem),
 );
@@ -62,14 +63,23 @@ $sizes: (
 /// Font Weights
 $weights: (
   "100": 100,
+  "thin": 100,
   "200": 200,
+  "extra-light": 200,
   "300": 300,
+  "light": 300,
   "400": 400,
+  "regular": 400,
   "500": 500,
+  "medium": 500,
   "600": 600,
+  "semibold": 600,
   "700": 700,
+  "bold": 700,
   "800": 800,
+  "extrabold": 800,
   "900": 900,
+  "black": 900,
 );
 
 @function weight($key) {
@@ -80,8 +90,8 @@ $weights: (
 
 /// Font Styles
 $styles: (
-  "normal": "normal",
-  "italic": "italic",
+  "normal": normal,
+  "italic": italic,
 );
 
 @function style($key) {
@@ -90,15 +100,29 @@ $styles: (
   @return $value;
 }
 
-/// Alignment
+/// Text Alignment
 $text-alignments: (
-  "left": "left",
-  "center": "center",
-  "right": "right",
+  "left": left,
+  "center": center,
+  "right": right,
 );
 
 @function text-alignment($key) {
   $value: map-get($text-alignments, $key);
+  @debug $value;
+  @return $value;
+}
+
+/// Text Transform
+$text-transforms: (
+  "none": none,
+  "uppercase": uppercase,
+  "lowercase": lowercase,
+  "capitalize": capitalize,
+);
+
+@function text-transform($key) {
+  $value: map-get($text-transforms, $key);
   @debug $value;
   @return $value;
 }
