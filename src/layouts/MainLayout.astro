@@ -6,25 +6,25 @@ import MainFooter from '../components/MainFooter.astro';
 // Scripts
 import main from '../scripts/main';
 
-const {title} = Astro.props;
+const { bodyClass }  = Astro.props;
 ---
 <html lang="en">
 <head>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width">
-	<title>{title}</title>
+	<title>The Beloved's Blog HTML Template</title>
 
 	<link rel="icon" type="image/png" href="/favicon.png" />
 </head>
-<body>
-  <MainHeader />
+<body class={bodyClass}>
+  	<MainHeader />
 
 	<main class="main-content">
-    <div class="container">
-      <slot></slot>
-    </div>
+		<div class="container">
+			<slot></slot>
+		</div>
 	</main>
 
-  <MainFooter />
+	<MainFooter />
 </body>
 </html>
