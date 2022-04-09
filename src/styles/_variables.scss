@@ -1,0 +1,20 @@
+/*
+Sections
+  - Colors
+*/
+
+/// Colors
+$colors: (
+  "black": #000,
+  "white": #fff,
+  "primary": #127fb0,
+  "primary-dark": #054663,
+  "primary-light": #c1e2f1,
+  "accent-1": #b00019,
+  "accent-2": #b0a912,
+);
+
+@function color($key) {
+  $col: map-get($colors, $key);
+  @return $col;
+}
