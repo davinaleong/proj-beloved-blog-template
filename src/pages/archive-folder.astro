@@ -1,0 +1,38 @@
+---
+// Style Imports
+import '../styles/main.scss';
+
+// Component Imports
+import MainLayout from '../layouts/MainLayout.astro';
+
+let title = 'The Beloved\'s Blog HTML Template';
+---
+
+<MainLayout>
+	<section class="hero-section">
+		<h1 class="hero-title">Archive</h1>
+	</section>
+
+  <section class="featured-section">
+		<header class="section-header">
+			<h2 class="section-title">Featured Post</h2>
+		</header>
+
+		<article class="featured-post">
+			<h3 class="post-title">Lorem Ipsum</h3>
+			<p class="post-date">7 Apr 2022</p>
+			<a href="/post" class="btn btn-primary">View Post</a>
+		</article>
+	</section>
+
+	<section class="content-section">
+		<div class="folder-list">
+      <div class="folder-item">Apr 2022</div>
+      <div class="folder-item">Mar 2022</div>
+      <div class="folder-item">Feb 2022</div>
+      <div class="folder-item">Jan 2022</div>
+      <div class="folder-item">Dec 2021</div>
+      <div class="folder-item">Nov 2021</div>
+    </div>
+	</section>
+</MainLayout>
