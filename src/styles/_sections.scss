@@ -43,6 +43,10 @@ main {
 
 .content-section {
   @extend .py-3;
+
+  p {
+    @extend .mb-2;
+  }
 }
 
 .post-item {
