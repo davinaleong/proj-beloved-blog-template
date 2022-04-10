@@ -129,10 +129,9 @@ $text-transforms: (
 }
 
 /// Text Decoration
-$text-decorations: ("none": none,
-  "uppercase": uppercase,
-  "lowercase": lowercase,
-  "capitalize": capitalize,
+$text-decorations: (
+  "none": none,
+  "underline": underline,
 );
 
 @function text-decoration($key) {
