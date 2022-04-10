@@ -24,6 +24,7 @@ $colors: (
   "primary-light": #c1e2f1,
   "accent-1": #b00019,
   "accent-2": #b0a912,
+  "transparent": transparent,
 );
 
 @function color($key) {
@@ -143,6 +144,7 @@ $text-decorations: (
 /// Spacers
 $unit: 1rem;
 $spacers: (
+  "0": $unit * 0,
   "1": $unit * 0.25,
   "2": $unit * 0.5,
   "3": $unit * 1,
