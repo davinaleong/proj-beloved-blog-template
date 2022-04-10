@@ -31,12 +31,14 @@ import MainLayout from '../layouts/MainLayout.astro';
 				<p class="post-description">
 					<strong>Lorem ipsum</strong> dolor sit amet consectetur adipisicing elit. Ut voluptas nihil ipsum aspernatur, <em>voluptates vitae fuga</em>, veritatis est ex quis exercitationem quod, <mark>quidem amet odit mollitia</mark> ad asperiores qui. Ab impedit nulla, cumque corrupti doloribus hic. Ducimus reprehenderit illo odit nemo commodi similique vel. Tempora, minima. Quo corrupti totam non&hellip;
 				</p>
-				<a href="/post" class="btn btn-primary">View Post</a>
+				<div class="btn-container">
+					<a href="/post" class="btn btn-primary">View Post</a>
+				</div>
 			</article>
 		</div>
 	</section>
 
-	<section class="content-section">
+	<section class="content-section bg-primary-light">
 		<div class="container">
 			<header class="section-header">
 				<h2 class="section-title">Latest Posts</h2>
@@ -67,8 +69,8 @@ import MainLayout from '../layouts/MainLayout.astro';
 					<a href="/post" class="btn btn-link">View Post</a>
 				</article>
 
-				<div class="btn-container">
-					<a href="/archive" class="btn btn-link">View All</a>
+				<div class="btn-container align-center">
+					<a href="/archive" class="btn btn-primary">View All</a>
 				</div>
 			</div>
 		</div>

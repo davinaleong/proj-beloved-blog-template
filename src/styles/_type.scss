@@ -21,6 +21,10 @@ a {
   @extend .mb-2;
 }
 
+.hero-subtitle {
+  font-style: style("italic");
+}
+
 .page-title {
   font-family: family("heading");
   font-size: size("page-subtitle");
@@ -30,7 +34,9 @@ a {
 .section-title {
   font-family: family("body");
   font-size: size("section-title");
+  font-weight: weight("light");
   text-transform: text-transform("uppercase");
+  margin-bottom: spacer("2");
 }
 
 .post-title {
@@ -39,12 +45,9 @@ a {
   font-style: style("italic");
 }
 
-.hero-subtitle {
-  font-style: style("italic");
-}
-
-.date {
+.post-date {
   font-size: size("small");
+  margin-bottom: spacer("2");
 }
 
 strong,
@@ -53,25 +56,6 @@ em,
 i,
 code {
   color: color("accent-1");
-}
-
-.color-accent-1 {
-  strong,
-  b,
-  em,
-  i,
-  code {
-    color: color("primary");
-  }
-
-  a {
-    color: color("primary");
-
-    &:hover,
-    &:focus {
-      color: darken(color("primary"), 5%);
-    }
-  }
 }
 
 mark {

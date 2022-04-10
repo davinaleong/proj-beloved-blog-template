@@ -1,10 +1,11 @@
 .main-footer {
-    color: color("white");
-    background-color: color("primary-dark");
+  color: color("white");
+  background-color: color("primary-dark");
+  @extend .py-2;
 }
 
 .copyright {
-    @extend .size-small;
-    @extend .style-italic;
-    @extend .align-center;
+  @extend .size-small;
+  @extend .style-italic;
+  @extend .align-center;
 }
