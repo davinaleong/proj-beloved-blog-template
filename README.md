@@ -1,43 +1,24 @@
-# Welcome to [Astro](https://astro.build)
+# The Beloved's Blog `HTML` Template
 
-[![Open in StackBlitz](https://developer.stackblitz.com/img/open_in_stackblitz.svg)](https://stackblitz.com/github/withastro/astro/tree/latest/examples/starter)
+This the `HTML` template of my latest project: my personal blogging portal.
 
-> 🧑‍🚀 **Seasoned astronaut?** Delete this file. Have fun!
+You may view the demo [here](https://davinaleong.github.io/proj-beloved-blog-template/dist/).
 
-## 🚀 Project Structure
+## About this project
 
-Inside of your Astro project, you'll see the following folders and files:
+This project is built in [Astro SSG](https://astro.build/).
+
+I chanced upon this technology through [Kevin Powell's](https://www.youtube.com/channel/UCJZv4d5rbIKd4QHMPkcABCw) [video](https://www.youtube.com/watch?v=o7iQAF2EvUU&t=1193s) on YouTube.
+
+Astro SSG sits nicely between pure `HTML` sites and full SPA libraries like React or Angular.
+It allows you to build a static site with reusable components like a navbar without the complexity of a full SPA library.
+
+## Commands
+
+Run
 
 ```
-/
-├── public/
-│   ├── robots.txt
-│   └── favicon.ico
-├── src/
-│   ├── components/
-│   │   └── Tour.astro
-│   └── pages/
-│       └── index.astro
-└── package.json
+npm run preview
 ```
 
-Astro looks for `.astro` or `.md` files in the `src/pages/` directory. Each page is exposed as a route based on its file name.
-
-There's nothing special about `src/components/`, but that's where we like to put any Astro/React/Vue/Svelte/Preact components.
-
-Any static assets, like images, can be placed in the `public/` directory.
-
-## 🧞 Commands
-
-All commands are run from the root of the project, from a terminal:
-
-| Command           | Action                                       |
-|:----------------  |:-------------------------------------------- |
-| `npm install`     | Installs dependencies                        |
-| `npm run dev`     | Starts local dev server at `localhost:3000`  |
-| `npm run build`   | Build your production site to `./dist/`      |
-| `npm run preview` | Preview your build locally, before deploying |
-
-## 👀 Want to learn more?
-
-Feel free to check [our documentation](https://github.com/withastro/astro) or jump into our [Discord server](https://astro.build/chat).
+And go to `localhost:3000` to view this project.
