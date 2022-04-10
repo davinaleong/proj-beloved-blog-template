@@ -16,7 +16,7 @@ const { bodyClass }  = Astro.props;
 
 	<link rel="icon" type="image/png" href="/favicon.png" />
 </head>
-<body class={bodyClass}>
+<body class={bodyClass} onload="bodyOnLoad()">
   	<MainHeader />
 
 	<main class="main-content">

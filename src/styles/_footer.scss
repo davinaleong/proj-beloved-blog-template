@@ -1,0 +1,10 @@
+.main-footer {
+    color: color("white");
+    background-color: color("primary-dark");
+}
+
+.copyright {
+    @extend .size-small;
+    @extend .style-italic;
+    @extend .align-center;
+}

@@ -1,17 +1,7 @@
-.icon {
-    width: 1em;
-}
-
-.container {
-    width: min(breakpoint("tablet"), 90%);
-    @extend .mx-auto;
-    @extend .p-2;
-}
-
 .main-header {
     background-color: color("primary-dark");
     color: color("white");
-    @extend .ta-center;
+    @extend .align-center;
     font-size: size("base");
     position: fixed;
     top: 0;
@@ -20,6 +10,8 @@
 }
 
 .main-nav {
+    display: flex;
+    flex-direction: column;
     position: relative;
 
     .icon-xmark {
@@ -31,8 +23,6 @@
     }
 
     &.active {
-        display: flex;
-
         .icon-xmark {
             display: inline;
         }
@@ -67,6 +57,10 @@
     width: 100%;
 }
 
+.main-nav.active .nav-links {
+    display: flex;
+}
+
 .nav-item {
     width: 100%;
 }
@@ -75,8 +69,10 @@
     display: block;
     color: color("white");
     text-decoration: text-decoration("none");
+    white-space: nowrap;
 
-    @extend .p-2;
+    @extend .py-2;
+    @extend .px-3;
     &:hover, &:focus {
         color: color("white");
         background-color: darken(color("primary-dark"), 5%);
@@ -87,10 +83,31 @@
     background-color: transparent;
     @extend .p-0;
     position: absolute;
-    top: 0;
-    right: 0;
+    top: spacer("1");
+    right: spacer("1");
 
     .icon {
         width: 1.5em;
+    }
+
+    &:hover, &:focus {
+        opacity: 0.7;
+    }
+}
+
+@media screen and (min-width: 768px) {
+    .main-nav {
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    .nav-links {
+        display: flex;
+        flex-direction: row;
+    }
+
+    .btn-collapse {
+        display: none;
     }
 }

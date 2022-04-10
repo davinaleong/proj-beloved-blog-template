@@ -37,38 +37,10 @@ $value in $colors {
     }
 }
 
-@each $key,
-$value in $weights {
-    .fw-#{$key} {
-        font-weight: $value;
-    }
-}
-
-@each $key,
-$value in $styles {
-    .fs-#{$key} {
-        font-style: $value;
-    }
-}
-
-@each $key,
-$value in $text-alignments {
-    .ta-#{$key} {
-        text-align: $value;
-    }
-}
-
-@each $key,
-$value in $text-transforms {
-    .tt-#{$key} {
-        font-weight: $value;
-    }
-}
-
 /// Font Families
 @each $key,
 $value in $families {
-    .ff-#{$key} {
+    .family-#{$key} {
         font-family: $value;
     }
 }
@@ -76,7 +48,7 @@ $value in $families {
 /// Font Sizes
 @each $key,
 $value in $sizes {
-    .fs-#{$key} {
+    .size-#{$key} {
         font-size: $value;
     }
 }
@@ -84,7 +56,7 @@ $value in $sizes {
 /// Font Weights
 @each $key,
 $value in $weights {
-    .fw-#{$key} {
+    .weight-#{$key} {
         font-weight: $value;
     }
 }
@@ -92,7 +64,7 @@ $value in $weights {
 /// Font Styles
 @each $key,
 $value in $styles {
-    .fs-#{$key} {
+    .style-#{$key} {
         font-style: $value;
     }
 }
@@ -100,7 +72,7 @@ $value in $styles {
 /// Text Align
 @each $key,
 $value in $text-alignments {
-    .ta-#{$key} {
+    .align-#{$key} {
         text-align: $value;
     }
 }
@@ -108,7 +80,7 @@ $value in $text-alignments {
 /// Text Transform
 @each $key,
 $value in $text-transforms {
-    .tt-#{$key} {
+    .transform-#{$key} {
         text-transform: $value;
     }
 }
@@ -116,7 +88,7 @@ $value in $text-transforms {
 /// Text Transform
 @each $key,
 $value in $text-decorations {
-    .td-#{$key} {
+    .decoration-#{$key} {
         text-decoration: $value;
     }
 }
