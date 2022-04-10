@@ -128,3 +128,15 @@ main {
     width: calc(33% - spacer("4"));
   }
 }
+
+@media screen and (min-width: breakpoint("desktop")) {
+  .folder-list > * {
+    width: calc(25% - spacer("4"));
+  }
+}
+
+@media screen and (min-width: breakpoint("desktop-l")) {
+  .folder-list > * {
+    width: calc(20% - spacer("4"));
+  }
+}

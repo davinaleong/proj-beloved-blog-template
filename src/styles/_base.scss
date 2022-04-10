@@ -8,7 +8,7 @@ body {
 }
 
 .container {
-  width: min(breakpoint("tablet"), 90%);
+  width: min(breakpoint("desktop"), 90%);
   margin-left: auto;
   margin-right: auto;
   padding-left: spacer("2");
