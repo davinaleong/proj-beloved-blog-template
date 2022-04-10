@@ -49,7 +49,7 @@ main {
 
 .content-section {
   @extend .py-4;
-  min-height: 100vh;
+  min-height: calc(100vh - 172px);
 
   p {
     @extend .mb-2;
@@ -140,9 +140,11 @@ main {
   @extend .my-3;
   list-style-type: none;
   display: flex;
+  flex-wrap: wrap;
+  align-items: center;
   justify-content: center;
   gap: spacer("2");
-  font-size: size("pagination");
+  max-width: 100%;
 }
 
 .pagination-link {
@@ -151,8 +153,8 @@ main {
   align-items: center;
   justify-content: center;
   text-decoration: text-decoration("none");
-  width: 3rem;
-  height: 3rem;
+  width: 2rem;
+  height: 2rem;
   border-radius: 50%;
   color: color("primary");
   background-color: color("transparent");
@@ -167,7 +169,7 @@ main {
 
 .pagination-link-arrow {
   display: block;
-  width: 2rem;
+  width: 1rem;
   transition: opacity 0.3s ease-in-out;
   &:hover,
   &:active,
