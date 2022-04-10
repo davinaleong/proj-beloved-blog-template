@@ -4,6 +4,7 @@ import '../styles/main.scss';
 
 // Component Imports
 import MainLayout from '../layouts/MainLayout.astro';
+import Pagination from '../components/Pagniation.astro';
 
 let title = 'The Beloved\'s Blog HTML Template';
 ---
@@ -101,33 +102,7 @@ let title = 'The Beloved\'s Blog HTML Template';
 				</article>
 			</div>
 			
-			<ul class="pagination">
-				<li class="pagination-item">
-					<a href="/archive-list" class="pagination-link-arrow">
-						<img src="assets/left.svg" alt="Prev Pagniation" class="icon-pagination">
-					</a>
-				</li>
-				<li class="pagination-item">
-					<a href="/archive-list" class="pagination-link">1</a>
-				</li>
-				<li class="pagination-item">
-					<a href="/archive-list" class="pagination-link">2</a>
-				</li>
-				<li class="pagination-item active">
-					<a href="/archive-list" class="pagination-link">3</a>
-				</li>
-				<li class="pagination-item">
-					<a href="/archive-list" class="pagination-link">4</a>
-				</li>
-				<li class="pagination-item">
-					<a href="/archive-list" class="pagination-link">5</a>
-				</li>
-				<li class="pagination-item">
-					<a href="/archive-list" class="pagination-link-arrow">
-						<img src="assets/right.svg" alt="Next Pagniation" class="icon-pagination">
-					</a>
-				</li>
-			</ul>
+			<Pagination />
 		</div>
 	</section>
 </MainLayout>

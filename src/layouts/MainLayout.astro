@@ -3,9 +3,6 @@
 import MainHeader from '../components/MainHeader.astro';
 import MainFooter from '../components/MainFooter.astro';
 
-// Scripts
-import main from '../scripts/main';
-
 const { bodyClass }  = Astro.props;
 ---
 <html lang="en">
@@ -15,8 +12,9 @@ const { bodyClass }  = Astro.props;
 	<title>The Beloved's Blog HTML Template</title>
 
 	<link rel="icon" type="image/png" href="/favicon.png" />
+	<script src="/scripts/main.js"></script>
 </head>
-<body class={bodyClass} onload="bodyOnLoad()">
+<body class={bodyClass}>
   	<MainHeader />
 
 	<main class="main-content">
