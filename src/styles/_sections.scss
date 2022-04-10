@@ -38,7 +38,7 @@ main {
 }
 
 .btn-container {
-  @extend .py-4;
+  @extend .mt-3;
 }
 
 .content-section {
@@ -124,6 +124,10 @@ main {
 }
 
 @media screen and (min-width: breakpoint("tablet")) {
+  .post-list > .post-item {
+    width: calc(50% - spacer("3"));
+  }
+
   .folder-list > * {
     width: calc(33% - spacer("4"));
   }
