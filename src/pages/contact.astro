@@ -8,25 +8,31 @@ import MainLayout from '../layouts/MainLayout.astro';
 let title = 'The Beloved\'s Blog HTML Template';
 ---
 
-<MainLayout bodyClass="bg-primary-light">
+<MainLayout bodyClass="page-contact bg-primary-light">
 	<section class="hero-section">
-		<h1 class="hero-title">Contact</h1>
+		<div class="container">
+			<header class="hero-header">
+				<h1 class="hero-title">Contact</h1>
+			</header>
+		</div>
 	</section>
 
 	<section class="content-section">
-		<p class="ta-center">
-			Need a prayer?<br>
-			Or just want to stay connected?
-		</p>
+		<div class="container align-center">
+			<p class="ta-center">
+				Need a prayer?<br>
+				Or just want to stay connected?
+			</p>
 
-		<p class="ta-center">
-			Address me as:<br>
-			<span class="name">Davina Leong</span>
-		</p>
+			<p class="ta-center">
+				Address me as:<br>
+				<span class="name">Davina Leong</span>
+			</p>
 
-		<p class="ta-center">
-			You may contact me at:<br>
-			<a href="mailto:leong.shi.yun@gmail.com">leong.shi.yun@gmail.com</a>
-		</p>
+			<p class="ta-center">
+				You may contact me at:<br>
+				<a href="mailto:leong.shi.yun@gmail.com">leong.shi.yun@gmail.com</a>
+			</p>
+		</div>
 	</section>
 </MainLayout>

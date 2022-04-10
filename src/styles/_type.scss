@@ -50,6 +50,12 @@ a {
   margin-bottom: spacer("2");
 }
 
+.name {
+  font-family: family("heading");
+  font-size: size("hero-title");
+  font-weight: weight("black");
+}
+
 strong,
 b,
 em,
