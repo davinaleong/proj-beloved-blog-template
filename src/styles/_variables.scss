@@ -164,11 +164,11 @@ $spacers: (
 
 /// Breakpoints
 $breakpoints: (
-  "phone": 300px,
-  "phone-l": 600px,
-  "tablet": 900px,
-  "desktop": 1200px,
-  "desktop-l": 1600px,
+  "phone": 18.75rem,
+  "phone-l": 37.5rem,
+  "tablet": 56.25rem,
+  "desktop": 75rem,
+  "desktop-l": 100rem,
 );
 
 @function breakpoint($key) {
