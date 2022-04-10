@@ -11,22 +11,45 @@
 .main-header {
     background-color: color("primary-dark");
     color: color("white");
-    @extend .p-2;
     @extend .ta-center;
     font-size: size("base");
     position: fixed;
     top: 0;
     width: 100vw;
+    z-index: 1;
 }
 
 .main-nav {
     position: relative;
+
+    .icon-xmark {
+        display: none;
+    }
+
+    .icon-bars {
+        display: inline;
+    }
+
+    &.active {
+        display: flex;
+
+        .icon-xmark {
+            display: inline;
+        }
+    
+        .icon-bars {
+            display: none;
+        }
+    }
 }
 
 .brand {
+    display: block;
     font-family: family("heading");
     color: color("white");
     text-decoration: text-decoration("none");
+    @extend .p-2;
+
     &:hover, &:focus {
         color: color("white");
     }
@@ -38,16 +61,25 @@
 .nav-links {
     list-style-type: none;
     padding-inline-start: 0;
-    display: flex;
+    display: none;
     flex-direction: column;
     align-items: center;
-    gap: spacer("2");
+    width: 100%;
 }
+
+.nav-item {
+    width: 100%;
+}
+
 .nav-link {
+    display: block;
     color: color("white");
     text-decoration: text-decoration("none");
+
+    @extend .p-2;
     &:hover, &:focus {
         color: color("white");
+        background-color: darken(color("primary-dark"), 5%);
     }
 }
 
@@ -57,4 +89,8 @@
     position: absolute;
     top: 0;
     right: 0;
+
+    .icon {
+        width: 1.5em;
+    }
 }
