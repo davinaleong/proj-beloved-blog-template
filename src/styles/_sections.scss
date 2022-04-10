@@ -90,3 +90,29 @@ main {
     }
   }
 }
+
+.folder-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: spacer("4");
+
+  & > * {
+    width: calc(50% - spacer("4"));
+  }
+}
+
+.folder-item {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-decoration: text-decoration("none");
+  color: color("white");
+  font-size: size("folder");
+  aspect-ratio: 1 / 1;
+  background-color: color("transparent");
+  background-image: url("/public/assets/folder.svg");
+  background-position: center;
+  background-size: contain;
+  background-repeat: no-repeat;
+  @extend .p-2;
+}
