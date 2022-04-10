@@ -1,14 +1,16 @@
 body {
-    min-height: 100vh;
-    padding-top: 36px;
+  font-family: family("body");
+  font-size: size("root");
 }
 
 .icon {
-    width: 1em;
+  width: 1em;
 }
 
 .container {
-    width: min(breakpoint("tablet"), 90%);
-    @extend .mx-auto;
-    @extend .p-2;
+  width: min(breakpoint("tablet"), 90%);
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: spacer("2");
+  padding-right: spacer("2");
 }

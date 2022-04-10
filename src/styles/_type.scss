@@ -7,7 +7,8 @@ a {
   color: color("accent-1");
   text-decoration: text-decoration("underline");
 
-  &:hover, &:focus {
+  &:hover,
+  &:focus {
     color: darken(color("accent-1"), 5%);
   }
 }
@@ -16,6 +17,8 @@ a {
   font-family: family("heading");
   font-size: size("site-title");
   font-weight: weight("bold");
+  font-weight: weight("black");
+  @extend .mb-2;
 }
 
 .page-title {
@@ -36,23 +39,36 @@ a {
   font-style: style("italic");
 }
 
-.date {
-  font-size: size("date");
+.hero-subtitle {
+  font-style: style("italic");
 }
 
-strong, b, em, i, code {
+.date {
+  font-size: size("small");
+}
+
+strong,
+b,
+em,
+i,
+code {
   color: color("accent-1");
 }
 
 .color-accent-1 {
-  strong, b, em, i, code {
+  strong,
+  b,
+  em,
+  i,
+  code {
     color: color("primary");
   }
 
   a {
     color: color("primary");
-  
-    &:hover, &:focus {
+
+    &:hover,
+    &:focus {
       color: darken(color("primary"), 5%);
     }
   }

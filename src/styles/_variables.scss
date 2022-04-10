@@ -178,7 +178,7 @@ $breakpoints: (
 
 /// Box Shadows
 $box-shadows: (
-  "hero": 3px 0 5px rgba(1, 1, 1, 0.3),
+  "hero": 0 5px 10px rgba(0, 0, 0, 0.5),
 );
 
 @function box-shadow($key) {

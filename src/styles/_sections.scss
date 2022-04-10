@@ -1,0 +1,17 @@
+main {
+  padding-top: 36px;
+  min-height: calc(100vh - 36px);
+}
+
+.hero-section {
+  @extend .pt-3;
+  @extend .pb-4;
+  @extend .mb-3;
+  @extend .shadow-hero;
+
+  color: color("white");
+  background-color: color("primary-dark");
+  text-align: text-alignment("center");
+  background-image: linear-gradient(color("primary-dark"), color("primary"));
+  border-radius: 0 0 30% 30%;
+}

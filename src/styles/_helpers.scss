@@ -166,7 +166,7 @@ $value in $spacers {
 /// Box Shadows
 @each $key,
 $value in $box-shadows {
-    .bs-#{$key} {
+    .shadow-#{$key} {
         box-shadow: $value;
     }
 }
