@@ -2,6 +2,7 @@
   background-color: color("primary-dark");
   color: color("white");
   @extend .align-center;
+  @extend .px-3;
   font-size: size("base");
   position: fixed;
   top: 0;
