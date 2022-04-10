@@ -38,11 +38,12 @@ main {
 }
 
 .btn-container {
-  @extend .py-3;
+  @extend .py-4;
 }
 
 .content-section {
-  @extend .py-3;
+  @extend .py-4;
+  min-height: 100vh;
 
   p {
     @extend .mb-2;
@@ -65,5 +66,27 @@ main {
 
   & > .btn-container {
     width: 100%;
+  }
+}
+
+.verse-section {
+  @extend .py-3;
+  color: color("white");
+
+  strong,
+  b,
+  em,
+  i,
+  code {
+    color: color("primary-dark");
+  }
+
+  a {
+    color: color("primary-dark");
+
+    &:hover,
+    &:focus {
+      color: darken(color("primary"), 5%);
+    }
   }
 }
