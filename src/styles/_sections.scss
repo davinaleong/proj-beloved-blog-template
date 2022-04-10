@@ -18,6 +18,12 @@ main {
 .featured-section {
   @extend .py-4;
   color: color("white");
+  cursor: pointer;
+  transition: opacity 0.3 ease-in-out;
+  &:hover,
+  &:active {
+    opacity: 0.7;
+  }
 
   strong,
   b,
@@ -50,15 +56,16 @@ main {
   }
 }
 
-.post-item {
-  @extend .pb-1;
-  border-bottom: thin solid color("primary");
-}
-
 .post-list {
   display: flex;
   flex-wrap: wrap;
-  gap: spacer("3");
+  gap: spacer("4");
+  cursor: pointer;
+  transition: opacity 0.3 ease-in-out;
+  &:hover,
+  &:active {
+    opacity: 0.7;
+  }
 
   & > .post-item {
     width: 100%;
@@ -67,6 +74,11 @@ main {
   & > .btn-container {
     width: 100%;
   }
+}
+
+.post-item {
+  @extend .pb-1;
+  border-bottom: thin solid color("primary");
 }
 
 .verse-section {
@@ -115,6 +127,7 @@ main {
   background-size: contain;
   background-repeat: no-repeat;
   @extend .p-2;
+  transition: opacity 0.3s ease-in-out;
 
   &:hover,
   &:active {
@@ -123,9 +136,54 @@ main {
   }
 }
 
+.pagination {
+  @extend .my-3;
+  list-style-type: none;
+  display: flex;
+  justify-content: center;
+  gap: spacer("2");
+  font-size: size("pagination");
+}
+
+.pagination-link {
+  @extend .p-2;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-decoration: text-decoration("none");
+  width: 3rem;
+  height: 3rem;
+  border-radius: 50%;
+  color: color("accent-1");
+  background-color: color("transparent");
+  transition: all 0.3s ease-in-out;
+  &:hover,
+  &:active,
+  &.active {
+    color: color("white");
+    background-color: color("primary");
+  }
+}
+
+.pagination-link-arrow {
+  display: block;
+  width: 2rem;
+  transition: opacity 0.3s ease-in-out;
+  &:hover,
+  &:active,
+  &.active {
+    opacity: 0.7;
+  }
+
+  & > img {
+    display: block;
+    width: 100%;
+  }
+}
+
 @media screen and (min-width: breakpoint("tablet")) {
   .post-list > .post-item {
-    width: calc(50% - spacer("3"));
+    width: calc(50% - spacer("4"));
   }
 
   .folder-list > * {

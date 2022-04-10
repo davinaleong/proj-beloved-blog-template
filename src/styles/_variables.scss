@@ -53,8 +53,9 @@ $sizes: (
   "hero-title": clamp(2.25rem, 1rem + 1vw, 5rem),
   "section-title": clamp(0.875rem, 0.5rem + 1vw, 1rem),
   "post-title": clamp(1.5rem, 0.5rem + 1vw, 5rem),
-  "small": clamp(0.75rem, 0.5rem + 1vw, 1.75rem),
+  "small": clamp(0.75rem, 0.5rem + 1vw, 1.25rem),
   "folder": clamp(1.5rem, 0.5rem + 1vw, 3rem),
+  "pagination": clamp(2rem, 0.5rem + 1vw, 2.5rem),
 );
 
 @function size($key) {
