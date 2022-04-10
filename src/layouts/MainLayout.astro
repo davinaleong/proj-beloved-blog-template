@@ -12,7 +12,7 @@ const { bodyClass }  = Astro.props;
 	<title>The Beloved's Blog HTML Template</title>
 
 	<link rel="icon" type="image/png" href="/favicon.png" />
-	<script src="/scripts/main.js"></script>
+	<script is:inline defer src="/assets/scripts/main.js"></script>
 </head>
 <body class={bodyClass}>
   	<MainHeader />
