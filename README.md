@@ -1,8 +1,6 @@
-# The Beloved's Blog `HTML` Template
+# The Beloved's Blog Astro
 
 This the `HTML` template of my latest project: my personal blogging portal.
-
-You may view the demo [here](https://davinaleong.github.io/proj-beloved-blog-template/dist/).
 
 ## About this project
 
