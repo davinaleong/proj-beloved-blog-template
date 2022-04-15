@@ -2,6 +2,8 @@
 
 This the `HTML` template of my latest project: my personal blogging portal.
 
+Demo [here](https://davinaleong.github.io/proj-beloved-blog-template/).
+
 ## About this project
 
 This project is built in [Astro SSG](https://astro.build/).
